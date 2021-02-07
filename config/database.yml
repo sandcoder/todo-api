@@ -48,6 +48,4 @@ test:
 #
 production:
   <<: *default
-  database: todos_api_production
-  username: todos_api
-  password: sisteract2
+  database: todos_api

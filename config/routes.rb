@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         resources :items
       end
     end
-    scope module: :v2, constraints: ApiVersion.new('v1') do
+    scope module: :v2, constraints: ApiVersion.new('v2') do
       resources :todos, only: :index
     end
   end

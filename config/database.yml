@@ -11,10 +11,9 @@
 #
 default: &default
   adapter: mysql2
-  encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
+  password: sisteract2
   host: localhost
 
 development:
@@ -51,4 +50,4 @@ production:
   <<: *default
   database: todos_api_production
   username: todos_api
-  password: <%= ENV['TODOS_API_DATABASE_PASSWORD'] %>
+  password: sisteract2
